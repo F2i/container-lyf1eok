@@ -2,7 +2,7 @@ services:
   app:
     stdin_open: true
     tty: true
-    image: container-ashfh5m
+    image: container-lyf1eok
     build:
       context: ./src
     ports:

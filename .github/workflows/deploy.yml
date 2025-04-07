@@ -32,32 +32,32 @@ jobs:
           amber exec -- sh -c 'ssh-keyscan $DOKKU_HOST >> ~/.ssh/known_hosts'
           eval `ssh-agent -s`
           ssh-add - <<< "${{ secrets.DOKKU_SSH_PRIVATE_KEY}}"
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku apps:create container-ashfh5m || true'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku builder:set container-ashfh5m build-dir src'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku builder-dockerfile:set container-ashfh5m dockerfile-path Dockerfile'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku apps:create container-lyf1eok || true'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku builder:set container-lyf1eok build-dir src'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku builder-dockerfile:set container-lyf1eok dockerfile-path Dockerfile'
 
           # Set common env settings
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_USER=$DB_USER"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_PASSWORD=$DB_PASSWORD"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_HOST=$DB_HOST"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_PORT=$DB_PORT"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_NAME=$DB_NAME"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_USER=$DB_USER"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_PASSWORD=$DB_PASSWORD"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_HOST=$DB_HOST"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_PORT=$DB_PORT"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_NAME=$DB_NAME"'
 
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m RAILS_DEVELOPMENT_HOSTS=container-ashfh5m.containers.anotherwebservice.com"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok RAILS_DEVELOPMENT_HOSTS=container-lyf1eok.containers.anotherwebservice.com"'
           # Database connection string (rails)
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DATABASE_URL=$RAILS_DATABASE_URL"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DATABASE_URL=$RAILS_DATABASE_URL"'
           # Database connection string (django)
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m SECRET_KEY=$DJANGO_SECRET_KEY"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m ALLOWED_HOSTS=$ALLOWED_HOSTS"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DEBUG=$DJANGO_DEBUG"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_ENGINE=$DJANGO_ENGINE"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_NAME=$DJANGO_DB_NAME"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_HOST=$DJANGO_DB_HOST"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_USER=$DJANGO_DB_USER"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_PASSWORD=$DJANGO_DB_PASSWORD"'
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-ashfh5m DB_PORT=$DJANGO_DB_PORT"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok SECRET_KEY=$DJANGO_SECRET_KEY"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok ALLOWED_HOSTS=$ALLOWED_HOSTS"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DEBUG=$DJANGO_DEBUG"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_ENGINE=$DJANGO_ENGINE"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_NAME=$DJANGO_DB_NAME"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_HOST=$DJANGO_DB_HOST"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_USER=$DJANGO_DB_USER"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_PASSWORD=$DJANGO_DB_PASSWORD"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY "dokku config:set --no-restart container-lyf1eok DB_PORT=$DJANGO_DB_PORT"'
 
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku git:sync --build container-ashfh5m https://github.com/jimmyedagawa78/container-ashfh5m.git main'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C $CONTAINER_HOSTING_API_KEY dokku git:sync --build container-lyf1eok https://github.com/jimmyedagawa78/container-lyf1eok.git main'
           # Assign letsencrypt wildcard certificate
-          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C "$CONTAINER_HOSTING_API_KEY dokku certs:add container-ashfh5m < cert-key.tar"'
+          amber exec -- sh -c 'ssh dokku@$DOKKU_HOST -C "$CONTAINER_HOSTING_API_KEY dokku certs:add container-lyf1eok < cert-key.tar"'
 

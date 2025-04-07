@@ -3,7 +3,7 @@
 By now, you have deployed a container, and in moments, you can visit your app
 live!
 
-> Be patient! In ~3 mins your app is live, at your [app url](https://container-ashfh5m.containers.anotherwebservice.com/). It even has a free SSL/TLS certificate 🔒 you're welcome!
+> Be patient! In ~3 mins your app is live, at your [app url](https://container-lyf1eok.containers.anotherwebservice.com/). It even has a free SSL/TLS certificate 🔒 you're welcome!
 
 You probably want to add code to your app. Good news, your app is ready right now to start coding, which is simple:
 
@@ -11,7 +11,7 @@ You probably want to add code to your app. Good news, your app is ready right no
 2. Commit your code
 3. Push your code `git push origin main`
 
-Your app will be automatically re-deployed with the latest code at: https://container-ashfh5m.containers.anotherwebservice.com/
+Your app will be automatically re-deployed with the latest code at: https://container-lyf1eok.containers.anotherwebservice.com/
 
 > You app is deployed already and is working software. Gone are the days of spending weeks coding and then *another* week going to production. No. Go to production *early* and respond to change.
 
@@ -20,8 +20,8 @@ Your app will be automatically re-deployed with the latest code at: https://cont
 > Step 0: You need to download your repo to your computer:
 
 ```
-git clone git@github.com:jimmyedagawa78/container-ashfh5m.git
-cd container-ashfh5m
+git clone git@github.com:jimmyedagawa78/container-lyf1eok.git
+cd container-lyf1eok
 ```
 
 > See an error? You might need to setup permissions [here's a guide how to setup repo clone permissions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
@@ -58,7 +58,7 @@ How do I turn on the debugger?
 Enable a breakpoint by adding `breakpoint()` to your code, start your application and run to that point then in a terminal type:
 
 ```
-docker attach container-ashfh5m
+docker attach container-lyf1eok
 ```
 Ta-da! You'll be inside the [Python debugger](https://docs.python.org/3/library/pdb.html#module-pdb) ( ⬅️ Read this!)
 
