@@ -1,69 +1,60 @@
-# Go forth and build! 🚀
+# 🎒 DANH SÁCH ĐỒ ĐẠC (CHECKLIST)
 
-By now, you have deployed a container, and in moments, you can visit your app
-live!
+## 🧳 Vali
+- [ ] Nịt
+- [ ] 1 hộp khăn giấy
+- [ ] Găng tay mới
+- [ ] 2/3 quần trong ngắn
+- [ ] 2 quần ngắn mặc ở nhà
+- [ ] 2 quần ống rộng đen (main)
+- [ ] 1 quần rộng backup
+- [ ] 1 quần vải
+- [ ] 1 quần ống rộng (cafe bình thường trước Tết)
+- [ ] 1 hoodie + 1 áo xám tay dài
+- [ ] 1 hoodie xanh
+- [ ] 1 áo ngắn tay xám
+- [ ] 1 áo khoác giả cầy
+- [ ] 3 áo khoác (2 đen + 1 cyberbunk)
+- [ ] 2 áo mỏng giữ nhiệt
+- [ ] 2 quần mỏng giữ nhiệt
+- [ ] 1/3 áo thun đen ko cổ
+- [ ] 1 áo thun đen có cổ chữ trắng trên ngực
+- [ ] 2 giày
+- [ ] 2 tất
+- [ ] 2 khăn lau đầu (chuyển qua Cặp)
+- [ ] Máy sấy tóc
 
-> Be patient! In ~3 mins your app is live, at your [app url](https://container-lyf1eok.containers.anotherwebservice.com/). It even has a free SSL/TLS certificate 🔒 you're welcome!
+## 🎒 Cặp
+- [ ] Ví (check bổ sung tiền mặt chẵn lẻ nếu cần)
+- [ ] Laptop
+- [ ] Sạc laptop
+- [ ] Dây sạc điện thoại
+- [ ] Củ sạc điện thoại
+- [ ] Chuột
+- [ ] Tai nghe không dây
+- [ ] Chai dầu gội redenyl
+- [ ] Bịch tẩy trang cũ
+- [ ] 1 bịch khẩu trang để xài ở quê
+- [ ] Găng tay cũ mặc định ở một bên
+- [ ] Dao cạo râu
+- [ ] Gậy đánh răng
+- [ ] Xịt tạo phồng
+- [ ] Kem vuốt tóc
+- [ ] Lăn nách
+- [ ] Nước hoa
+- [ ] Sữa rửa mặt
+- [ ] Tẩy trang
+- [ ] Serum 1
+- [ ] Serum 2
+- [ ] Dưỡng ẩm
+- [ ] Kính đi đường
 
-You probably want to add code to your app. Good news, your app is ready right now to start coding, which is simple:
-
-1. Edit your code
-2. Commit your code
-3. Push your code `git push origin main`
-
-Your app will be automatically re-deployed with the latest code at: https://container-lyf1eok.containers.anotherwebservice.com/
-
-> You app is deployed already and is working software. Gone are the days of spending weeks coding and then *another* week going to production. No. Go to production *early* and respond to change.
-
-# Getting Started 💻 (locally on your laptop)
-
-> Step 0: You need to download your repo to your computer:
-
-```
-git clone git@github.com:jimmyedagawa78/container-lyf1eok.git
-cd container-lyf1eok
-```
-
-> See an error? You might need to setup permissions [here's a guide how to setup repo clone permissions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-
-1. [Install docker](https://docs.docker.com/get-docker/)
-
-2. Start your container locally: `docker-compose up`
-3. Visit your app locally: http://127.0.0.1:5000/
-
-## View your app locally
-
-Visit: http://127.0.0.1:5000/
-
-### Rebuild container (locally)
-If you make changes to `Dockerfile`, then you need to rebuild your container image. To rebuild the container image:
-```
-docker-compose build
-# or 
-docker-compose up --build
-```
-
-# Start coding! Which framework did you choose?
-
-Need some help to get started?
-
-- [**Flask** quickstart guide](https://flask.palletsprojects.com/en/2.2.x/quickstart/) ⚗️ 🐍
-- [**Django** quide](https://docs.djangoproject.com/en/4.1/topics/http/views/) 📰
-- [**Ruby** quickstart guide](https://github.com/KarmaComputing/rails-quickstart) 💎
-
-# Debugging
-
-How do I turn on the debugger?
-
-Enable a breakpoint by adding `breakpoint()` to your code, start your application and run to that point then in a terminal type:
-
-```
-docker attach container-lyf1eok
-```
-Ta-da! You'll be inside the [Python debugger](https://docs.python.org/3/library/pdb.html#module-pdb) ( ⬅️ Read this!)
-
-
-
-## Questions
-
-- How was this built? [All code is here](https://github.com/KarmaComputing/container-hosting)
+## 👛 Túi đeo chéo
+- [ ] **Chìa khóa xe máy + Chìa khóa nhà (IMPORTANT)**
+- [ ] Thuốc say xe
+- [ ] Điện thoại
+- [ ] Chai dầu
+- [ ] Tai nghe
+- [ ] Bánh mì
+- [ ] Khẩu trang dự phòng
+- [ ] Ít tờ giấy
